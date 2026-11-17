@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Emilly</title>
+    <style>
+        :root {
+            --bg-principal: #fff5f6;
+            --bg-card: #ffffff;
+            --rosa-escuro: #4a2830;
+            --rosa-principal: #d47a8f;
+            --rosa-medio: #e8a7b5;
+            --rosa-claro: #fcd7de;
+            --texto-escuro: #2d1e22;
+            --texto-suave: #614d52;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-principal);
+            color: var(--texto-escuro);
+            line-height: 1.7;
+            padding-bottom: 3rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, #b3566d 0%, #d47a8f 100%);
+            color: #ffffff;
+            padding: 4rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(179, 86, 109, 0.15);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background-color: var(--bg-card);
+            padding: 2.5rem;
+            border-radius: 16px;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 10px 30px rgba(179, 86, 109, 0.06);
+            border: 1px solid rgba(214, 122, 143, 0.15);
+        }
+
+        h2 {
+            color: var(--rosa-escuro);
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-left: 12px;
+        }
+
+        h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 4px;
+            bottom: 4px;
+            width: 4px;
+            background-color: var(--rosa-principal);
+            border-radius: 2px;
+        }
+
+        .perfil-info p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: var(--texto-suave);
+        }
+
+        .perfil-info strong {
+            color: var(--rosa-escuro);
+            font-weight: 600;
+            display: inline-block;
+            width: 100px;
+        }
+
+        .intro-texto {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px dashed var(--rosa-claro);
+            color: var(--texto-suave);
+        }
+
+        .artistas-container {
+            margin-top: 2rem;
+        }
+
+        .artista-card {
+            background-color: #fffbfe;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.2rem;
+            border: 1px solid var(--rosa-claro);
+            transition: all 0.3s ease;
+        }
+
+        .artista-card:hover {
+            transform: translateX(5px);
+            border-color: var(--rosa-principal);
+            box-shadow: 0 5px 15px rgba(214, 122, 143, 0.1);
+        }
+
+        .artista-card h3 {
+            color: var(--rosa-escuro);
+            font-size: 1.2rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .artista-card p {
+            color: var(--texto-suave);
+            font-size: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--texto-suave);
+            font-size: 0.9rem;
+            margin-top: 4rem;
+        }
+
+        /* Responsividade básica */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.2rem; }
+            section { padding: 1.5rem; }
+            .perfil-info strong { display: block; margin-bottom: 0.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portfólio 
+            Emilly Thaise Dos Santos Wolski</h1>
+        <p>Disciplina de Complementação &bull; Componente Técnico</p>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2>Sobre Mim</h2>
+            <div class="perfil-info">
+                <p><strong>Nome:</strong> Emilly</p>
+                <p><strong>Idade:</strong> 15 anos</p>
+                <p><strong>Formação:</strong> Curso Técnico de Desenvolvimento de Sistemas</p>
+            </div>
+            <p class="intro-texto">
+            com uma das minhas maiores paixões: a música.
+            </p>
+        </section>
+
+        <section>
+            <h2>Tema: Música (Artistas Favoritos)</h2>
+            <p style="color: var(--texto-suave); margin-bottom: 1.5rem;">
+                A música faz parte da minha rotina e me acompanha enquanto estudo e programo. Abaixo estão três grandes artistas que se destacam nas minhas playlists:
+            </p>
+            
+            <div class="artistas-container">
+                
+                <div class="artista-card">
+                    <h3>Sabrina Carpenter</h3>
+                    <p>Cantora e atriz norte-americana, conhecida por seu estilo Pop contagiante, vocais marcantes e letras cheias de personalidade e humor.</p>
+                </div>
+
+                <div class="artista-card">
+                    <h3>Ariana Grande</h3>
+                    <p>Uma das maiores potências do Pop e R&B mundial, famosa por seu alcance vocal impressionante, hits inesquecíveis e álbuns aclamados pela crítica.</p>
+                </div>
+
+                <div class="artista-card">
+                    <h3>Eminem</h3>
+                    <p>Lenda do Hip-Hop internacional, reconhecido mundialmente por sua velocidade nas rimas, composições profundas e impacto histórico na indústria musical.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Emilly &bull; Desenvolvido com fins educacionais</p>
+    </footer>
+
+</body>
+</html>
